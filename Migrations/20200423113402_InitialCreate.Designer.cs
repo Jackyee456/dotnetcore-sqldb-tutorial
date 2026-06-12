@@ -21,7 +21,7 @@ namespace DotNetCoreSqlDb.Migrations
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", 1)
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
                     b.Property<string>("Description")
